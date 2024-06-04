@@ -1,0 +1,557 @@
+[{
+  "_id": {
+    "$oid": "665db9f60e524a17a0115511"
+  },
+  "patient_id": 2,
+  "fname": "Jane",
+  "lname": "Smith",
+  "blood_type": "O-",
+  "phone": "987-654-3210",
+  "email": "jane.smith@example.com",
+  "gender": "Female",
+  "insurance": {
+    "policy_number": "POL002",
+    "provider": "XYZ Insurance",
+    "insurance_type": "Premium Plan",
+    "co_pay": 30,
+    "coverage": "Partial Coverage",
+    "maternity": "N",
+    "dental": "Y",
+    "vision": "Y"
+  },
+  "birthday": {
+    "$date": "1990-03-20T00:00:00.000Z"
+  },
+  "medical_history": [
+    {
+      "medical_history_id": 2,
+      "patient_id": "Allergy",
+      "condition": {
+        "$date": "2023-03-05T00:00:00.000Z"
+      },
+      "record_date": 2
+    }
+  ],
+  "emergency_contacts": [
+    {
+      "name": "Jane Smith",
+      "phone": "222-333-4444",
+      "relation": "Mother"
+    }
+  ],
+  "episodes": [
+    {
+      "episode_id": 2,
+      "patient_id": 2,
+      "prescriptions": [
+        {
+          "prescription_id": 384,
+          "prescription_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 81
+        },
+        {
+          "prescription_id": 546,
+          "prescription_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 38
+        },
+        {
+          "prescription_id": 547,
+          "prescription_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 35
+        },
+        {
+          "prescription_id": 548,
+          "prescription_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 91
+        },
+        {
+          "prescription_id": 549,
+          "prescription_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 72
+        },
+        {
+          "prescription_id": 550,
+          "prescription_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 44
+        },
+        {
+          "prescription_id": 551,
+          "prescription_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 16
+        },
+        {
+          "prescription_id": 552,
+          "prescription_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 49
+        }
+      ],
+      "bills": [
+        {
+          "bill_id": 48,
+          "room_cost": 100,
+          "test_cost": 198.34,
+          "add_charges": 9905,
+          "total_cost": 10203.34,
+          "register_date": {
+            "$date": "2024-06-03T12:41:25.459Z"
+          },
+          "payment_status": "PENDING"
+        },
+        {
+          "bill_id": 49,
+          "room_cost": 100,
+          "test_cost": 198.34,
+          "add_charges": 9905,
+          "total_cost": 10203.34,
+          "register_date": {
+            "$date": "2024-06-03T12:41:25.464Z"
+          },
+          "payment_status": "PENDING"
+        }
+      ],
+      "screenings": [
+        {
+          "screening_id": 88,
+          "screening_date": {
+            "$date": "2019-04-18T00:00:00.000Z"
+          },
+          "screening_technician": {
+            "employee_id": 49,
+            "fname": "Ashley",
+            "lname": "Stein",
+            "dateJoining": {
+              "$date": "2014-10-02T00:00:00.000Z"
+            },
+            "dateSeparation": null,
+            "email": "krystal59@example.org",
+            "address": "\"8049 Adrian Throughway",
+            "department": {
+              "department_id": 9,
+              "dept_head": "Travis Smith",
+              "dept_name": "Diagnostic_2",
+              "dept_employeeCount": 3
+            },
+            "ssn": 414092098,
+            "is_active": "Y"
+          },
+          "screening_cost": 198.34
+        }
+      ],
+      "appointments": [],
+      "hospitalizations": [
+        {
+          "admissionDate": {
+            "$date": "2019-04-17T00:00:00.000Z"
+          },
+          "dischargeDate": null,
+          "room": {
+            "room_id": 1,
+            "room_type": "Single",
+            "room_cost": 100
+          },
+          "responsibleNurse": {
+            "employee_id": 4,
+            "fname": "Joe",
+            "lname": "Ferguson",
+            "dateJoining": {
+              "$date": "2018-08-10T00:00:00.000Z"
+            },
+            "dateSeparation": null,
+            "email": "vsullivan@example.org",
+            "address": "DPO AE 27029\"",
+            "department": {
+              "department_id": 17,
+              "dept_head": "Ethan Brown",
+              "dept_name": "Gynecology",
+              "dept_employeeCount": 5
+            },
+            "ssn": 531094042,
+            "is_active": "Y"
+          }
+        }
+      ]
+    },
+    {
+      "episode_id": 166,
+      "patient_id": 2,
+      "prescriptions": [
+        {
+          "prescription_id": 114,
+          "prescription_date": {
+            "$date": "2020-03-08T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 25
+        },
+        {
+          "prescription_id": 115,
+          "prescription_date": {
+            "$date": "2020-03-08T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 13
+        },
+        {
+          "prescription_id": 116,
+          "prescription_date": {
+            "$date": "2020-03-08T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 26
+        },
+        {
+          "prescription_id": 117,
+          "prescription_date": {
+            "$date": "2020-03-08T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 4
+        },
+        {
+          "prescription_id": 118,
+          "prescription_date": {
+            "$date": "2020-03-08T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 70
+        },
+        {
+          "prescription_id": 119,
+          "prescription_date": {
+            "$date": "2020-03-08T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 90
+        },
+        {
+          "prescription_id": 120,
+          "prescription_date": {
+            "$date": "2020-03-08T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 91
+        }
+      ],
+      "bills": [],
+      "screenings": [
+        {
+          "screening_id": 91,
+          "screening_date": {
+            "$date": "2020-03-08T00:00:00.000Z"
+          },
+          "screening_technician": {
+            "employee_id": 76,
+            "fname": "Robert",
+            "lname": "Day",
+            "dateJoining": {
+              "$date": "2014-10-02T00:00:00.000Z"
+            },
+            "dateSeparation": null,
+            "email": "perkinsmaria@example.org",
+            "address": "Aprilmouth, OH 09009\"",
+            "department": {
+              "department_id": 9,
+              "dept_head": "Travis Smith",
+              "dept_name": "Diagnostic_2",
+              "dept_employeeCount": 3
+            },
+            "ssn": 429282057,
+            "is_active": "Y"
+          },
+          "screening_cost": 119.32
+        }
+      ],
+      "appointments": [],
+      "hospitalizations": [
+        {
+          "admissionDate": {
+            "$date": "2020-02-14T00:00:00.000Z"
+          },
+          "dischargeDate": {
+            "$date": "2020-03-11T00:00:00.000Z"
+          },
+          "room": {
+            "room_id": 41,
+            "room_type": "Single",
+            "room_cost": 100
+          },
+          "responsibleNurse": {
+            "employee_id": 20,
+            "fname": "Jennifer",
+            "lname": "Ball",
+            "dateJoining": {
+              "$date": "2019-11-28T00:00:00.000Z"
+            },
+            "dateSeparation": {
+              "$date": "2022-01-05T00:00:00.000Z"
+            },
+            "email": "brandymartinez@example.com",
+            "address": "Lake Tina, IA 30662\"",
+            "department": {
+              "department_id": 16,
+              "dept_head": "Sophia Lopez",
+              "dept_name": "Ophthalmology",
+              "dept_employeeCount": 5
+            },
+            "ssn": 404767927,
+            "is_active": "N"
+          }
+        }
+      ]
+    },
+    {
+      "episode_id": 181,
+      "patient_id": 2,
+      "prescriptions": [
+        {
+          "prescription_id": 199,
+          "prescription_date": {
+            "$date": "2020-05-15T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 30
+        },
+        {
+          "prescription_id": 200,
+          "prescription_date": {
+            "$date": "2020-05-15T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 4
+        },
+        {
+          "prescription_id": 201,
+          "prescription_date": {
+            "$date": "2020-05-15T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 16
+        },
+        {
+          "prescription_id": 202,
+          "prescription_date": {
+            "$date": "2020-05-15T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 84
+        },
+        {
+          "prescription_id": 203,
+          "prescription_date": {
+            "$date": "2020-05-15T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 74
+        },
+        {
+          "prescription_id": 430,
+          "prescription_date": {
+            "$date": "2020-05-15T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 31
+        },
+        {
+          "prescription_id": 431,
+          "prescription_date": {
+            "$date": "2020-05-15T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 60
+        },
+        {
+          "prescription_id": 432,
+          "prescription_date": {
+            "$date": "2020-05-15T00:00:00.000Z"
+          },
+          "medicine": {
+            "medicine_id": 1,
+            "medicine_name": "Paracetamol",
+            "medicine_quantity": 50,
+            "medicine_cost": 10
+          },
+          "dosage": 79
+        }
+      ],
+      "bills": [{
+        "bill_id": 1,
+        "room_cost": 300,
+        "test_cost": 0,
+        "add_charges": 3780,
+        "total_cost": 4080,
+        "register_date": "2024-06-03T13:54:21.426Z",
+        "payment_status": "PENDING"
+    }],
+      "screenings": [],
+      "appointments": [],
+      "hospitalizations": [
+        {
+          "admissionDate": {
+            "$date": "2020-05-04T00:00:00.000Z"
+          },
+          "dischargeDate": "2024-06-03T13:54:21.426Z",
+          "room": {
+            "room_id": 6,
+            "room_type": "VIP",
+            "room_cost": 300
+          },
+          "responsibleNurse": {
+            "employee_id": 26,
+            "fname": "Vickie",
+            "lname": "Gonzalez",
+            "dateJoining": {
+              "$date": "2018-04-10T00:00:00.000Z"
+            },
+            "dateSeparation": {
+              "$date": "2023-01-05T00:00:00.000Z"
+            },
+            "email": "lolson@example.com",
+            "address": "East Michael, CT 20442\"",
+            "department": {
+              "department_id": 16,
+              "dept_head": "Sophia Lopez",
+              "dept_name": "Ophthalmology",
+              "dept_employeeCount": 5
+            },
+            "ssn": 925078857,
+            "is_active": "N"
+          }
+        }
+      ]
+    }
+  ]
+}]

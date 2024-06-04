@@ -1,0 +1,54 @@
+[
+    {
+        "name" : "Get Patient by ID",
+        "command" : "find({ patient_id: 1 })"
+    },
+    {
+        "name" : "Get all Episodes for a specific Patient",
+        "command" : "aggregate([ { $match: { patient_id: 1 } }, { $unwind: \"$episodes\" }])"
+    },
+    {
+        "name" : "Get all patients with specific blood type",
+        "command" : "find({ blood_type: 'O-' })"
+    },
+    {
+        "name" : "Find the average age of all Patients",
+        "command" : "aggregate([{$group: {_id: null,averageAge: {$avg: {$divide: [{ $subtract: [new Date(), \"$birthday\"] },1000 * 60 * 60 * 24 * 365 ]}}}}])"
+    },
+    {
+        "name" : "Get patient phone number and update it",
+        "command" : "updateOne({ patient_id: 1 },{ $set: { phone: '555-6789' } })"
+    },
+    {
+        "name" : "See patients medical history and add new condition to medical history",
+        "command" : "updateOne: {{ patient_id: 1 }, $push: { medical_history: { medical_history_id: 1098, condition: \"Schizophrenia\", record_date: new Date() } }, }"
+    },
+    {
+        "name" : "Delete a Patient and all their Episodes",
+        "command" : "deleteOne({ patient_id: 2 })"
+    },
+    {
+        "name" : "Remove a specific episode for a patient",
+        "command" : "updateOne({ patient_id: 1 },{ $pull: { episodes: { episode_id: 180 } } })"
+    },
+    {
+        "name" : "Find Patients who have been prescribed a specific medicine",
+        "command" : "aggregate([{ $unwind: \"$episodes\" },{ $unwind: \"$episodes.prescriptions\" },{ $match: { \"episodes.prescriptions.medicine.medicine_name\": \"Paracetamol\" }}])"
+    },
+    {
+        "name" : "Get the total cost of all bills for a specific Patient",
+        "command" : "aggregate([{ $match: { patient_id: 3 } },{ $unwind: \"$episodes\" },{ $unwind: \"$episodes.bills\" },{$group: {_id: null,totalCost: { $sum: \"$episodes.bills.total\" }}}])"
+    },
+    {
+        "name" : "Find all Patients who have an appointment on a specific date",
+        "command" : "aggregate([   { $unwind: \"$episodes\" },{ $unwind: \"$episodes.appointments\" },{$match: {\"episodes.appointments.appointment_date\": ISODate(\"2018-11-29T00:00:00.000Z\")}}])"
+    },
+    {
+        "name" : "Count the number of Patients by gender",
+        "command" : "aggregate([{ $group: { _id: \"$gender\", count: { $sum: 1 } } }])"
+    },
+    {
+        "name" : "Find the most common medical condition among Patients",
+        "command" : "aggregate([{ $unwind: \"$medical_history\" },{$group: {_id: \"$medical_history.condition\",frequency: { $sum: 1 }}},{ $sort: { frequency: -1 } },{ $limit: 1 }]))"
+    }
+]

@@ -1,0 +1,6 @@
+oracledb
+pymongo
+pymongo[srv]
+python-dotenv
+tqdm
+requests
