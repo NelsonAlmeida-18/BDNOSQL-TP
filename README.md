@@ -1,4 +1,4 @@
-# nosql-projeto
+# NoSQL databases Practical Assignment
 
 It is intended that each group of students carry out a work of analysis, planning, implementation of
 a relational and two non-relational DBMS. To do so, they must use the Hospital Management
